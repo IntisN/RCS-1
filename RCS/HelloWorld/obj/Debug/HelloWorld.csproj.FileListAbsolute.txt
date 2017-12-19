@@ -1,0 +1,7 @@
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\HelloWorld\bin\Debug\HelloWorld.exe.config
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\HelloWorld\bin\Debug\HelloWorld.exe
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\HelloWorld\bin\Debug\HelloWorld.pdb
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\HelloWorld\obj\Debug\HelloWorld.csprojResolveAssemblyReference.cache
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\HelloWorld\obj\Debug\HelloWorld.csproj.CoreCompileInputs.cache
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\HelloWorld\obj\Debug\HelloWorld.exe
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\HelloWorld\obj\Debug\HelloWorld.pdb
