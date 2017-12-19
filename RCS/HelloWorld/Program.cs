@@ -12,6 +12,7 @@ namespace HelloWorld
         {
             //Printing Hello World on screen
             Console.WriteLine(value: "Hello World! Es esmu te!");
+            //Pausing app so we could read this text
             Console.ReadLine();
         }
     }
