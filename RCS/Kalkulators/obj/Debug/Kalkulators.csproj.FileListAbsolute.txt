@@ -1,0 +1,7 @@
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\Kalkulators\obj\Debug\Kalkulators.csproj.CoreCompileInputs.cache
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\Kalkulators\bin\Debug\Kalkulators.exe.config
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\Kalkulators\bin\Debug\Kalkulators.exe
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\Kalkulators\bin\Debug\Kalkulators.pdb
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\Kalkulators\obj\Debug\Kalkulators.exe
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\Kalkulators\obj\Debug\Kalkulators.pdb
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\Kalkulators\obj\Debug\Kalkulators.csprojResolveAssemblyReference.cache
