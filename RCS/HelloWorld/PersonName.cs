@@ -8,6 +8,7 @@ namespace HelloWorld
 {
     class PersonName
     {
+        public string HelloText;
         public void sayHello()
         {
             //Asking for some text
@@ -16,8 +17,8 @@ namespace HelloWorld
             string myName;
             //Adding data to created variable
             myName = Console.ReadLine();
-            //Printing Hello World on screen
-            Console.WriteLine("Hello World! Es esmu te! " + myName);
+            //Printing Hello text on screen
+            Console.WriteLine(HelloText + myName);
         }
 }
 }
