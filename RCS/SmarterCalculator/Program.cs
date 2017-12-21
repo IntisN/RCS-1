@@ -11,30 +11,20 @@ namespace SmarterCalculator
         static void Main(string[] args)
         {
             //Creating calculator object
+            MathParser parser;
+            parser = new MathParser();
+
             //Asking banana to enter calculation
             Console.WriteLine("Please enter calculation");
             string input = Console.ReadLine();
-            //
-            int result;
-            int counter = 0;
-            while (counter < input.Length)
-            {
-                char symbol = input[counter];
-                if (symbol == '+')
-                {
 
-                }
-                else
-                {
-                    int number;
-                    number = Int32.Parse(symbol.ToString());
-                    Console.WriteLine("Number" + number);
-                }
+            //calculating things
+            int result = parser.ParseMath(input);
 
-                input = input.Remove(1, input.Length - 1);
-                counter = counter + 1;
-            }
+            //Printing result on screen
+            Console.WriteLine("Your result is " + result);
 
+            //Pausing an app so people can read things
             Console.ReadLine();
         }
     }
