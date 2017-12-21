@@ -1,0 +1,15 @@
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\BuyList\bin\Debug\BuyList.exe.config
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\BuyList\bin\Debug\BuyList.exe
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\BuyList\bin\Debug\BuyList.pdb
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\BuyList\obj\Debug\BuyList.csprojResolveAssemblyReference.cache
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\BuyList\obj\Debug\MainWindow.g.cs
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\BuyList\obj\Debug\App.g.cs
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\BuyList\obj\Debug\BuyList_MarkupCompile.cache
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\BuyList\obj\Debug\BuyList_MarkupCompile.lref
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\BuyList\obj\Debug\MainWindow.baml
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\BuyList\obj\Debug\BuyList.g.resources
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\BuyList\obj\Debug\BuyList.Properties.Resources.resources
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\BuyList\obj\Debug\BuyList.csproj.GenerateResource.Cache
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\BuyList\obj\Debug\BuyList.csproj.CoreCompileInputs.cache
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\BuyList\obj\Debug\BuyList.exe
+C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\BuyList\obj\Debug\BuyList.pdb
