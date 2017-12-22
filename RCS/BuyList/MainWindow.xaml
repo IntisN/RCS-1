@@ -5,15 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BuyList"
         mc:Ignorable="d"
-        Title="Pirkumu saraksta aplikācija" Height="350" Width="525">
+        Title="Pirkumu saraksta aplikācija" Height="350" Width="525"
+        Background="Pink">
+
     <Grid>
-        <TextBox x:Name="BuyListItemName" HorizontalAlignment="Left" Height="81" Margin="10,10,0,0" TextWrapping="Wrap" TextAlignment="Center" Text="" VerticalAlignment="Top" Width="266"/>
-        <Button x:Name="AddListItemButton" Click="AddListItemButton_Click" Content="Pievienot pirkumu" HorizontalAlignment="Left" Margin="85,96,0,0" VerticalAlignment="Top" Width="116"/>
-        <TextBlock x:Name="BuyItemName" HorizontalAlignment="Left" Margin="10,121,0,0" TextWrapping="Wrap" Text="Rezultāts" VerticalAlignment="Top" RenderTransformOrigin="-0.41,-2.736" Height="22" Width="266"/>
-        <ScrollViewer Margin="281,10,9.667,60.667">
+        <TextBox x:Name="BuyListItemName" HorizontalAlignment="Left" Height="81" Margin="10,10,0,0" TextWrapping="Wrap" TextAlignment="Center" Text="" VerticalAlignment="Top" Width="266" GotFocus="BuyListItemName_GotFocus"/>
+        <Button x:Name="AddListItemButton" Click="AddListItemButton_Click" Content="Pievienot pirkumu" HorizontalAlignment="Left" Margin="10,96,0,0" VerticalAlignment="Top" Width="116"/>
+        <TextBlock x:Name="BuyItemName" HorizontalAlignment="Left" Margin="281,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.41,-2.736" Height="22" Width="228" Text="Pēdējais pievienotais šeit"/>
+        <ScrollViewer Margin="281,37,9.667,9.667">
             <ItemsControl x:Name="BuyItemsListControl"/>
         </ScrollViewer>
-        <Button Content="Nodzēst sarakstu" Click="Button_Click" HorizontalAlignment="Left" Margin="352,277,0,0" VerticalAlignment="Top" Width="112" RenderTransformOrigin="0.453,6.989"/>
+        <Button Content="Nodzēst sarakstu" Click="Button_Click" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" Width="116" RenderTransformOrigin="0.453,6.989"/>
+        <Button Content="Saglabāt vēsturē" HorizontalAlignment="Left" Margin="160,96,0,0" VerticalAlignment="Top" Width="116" Click="Button_Click_1"/>
 
     </Grid>
 </Window>
