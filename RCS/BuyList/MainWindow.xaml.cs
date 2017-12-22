@@ -33,8 +33,13 @@ namespace BuyList
             //Asking for adding some items
             this.BuyListItemName.Text = "Lūdzu, ievadiet pirkumu!";
             //Hardcoding some text in ItemsControl from history
-            string history = File.ReadAllText(@".\Saraksts.txt");
-            this.BuyItemsList.Add(history);
+            var History = File.ReadAllLines(@".\Saraksts.txt");
+            for (int i = 0; i < History.Length; i++)
+            {
+                var ReadFromHistoryFile = History[i];
+                this.BuyItemsList.Add(ReadFromHistoryFile);
+            }
+            
             //Add entered items to ItemsControl
             this.BuyItemsListControl.ItemsSource = this.BuyItemsList;
         }
@@ -62,7 +67,7 @@ namespace BuyList
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            //Write list to file
+            //Write list from BuyItemsList to file
             File.WriteAllLines(@".\Saraksts.txt", this.BuyItemsList);
         }
 
@@ -72,6 +77,13 @@ namespace BuyList
             TextBox tb = (TextBox)sender;
             tb.Text = string.Empty;
             tb.GotFocus -= BuyListItemName_GotFocus;
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            //Deleting lines from BuyItemsList or reject operation
+                string SelectedItem = this.BuyItemsListControl.SelectedItems[0] as string;
+                BuyItemsList.Remove(SelectedItem);
         }
     }
 }

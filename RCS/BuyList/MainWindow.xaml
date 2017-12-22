@@ -13,10 +13,11 @@
         <Button x:Name="AddListItemButton" Click="AddListItemButton_Click" Content="Pievienot pirkumu" HorizontalAlignment="Left" Margin="10,96,0,0" VerticalAlignment="Top" Width="116"/>
         <TextBlock x:Name="BuyItemName" HorizontalAlignment="Left" Margin="281,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.41,-2.736" Height="22" Width="228" Text="Pēdējais pievienotais šeit"/>
         <ScrollViewer Margin="281,37,9.667,9.667">
-            <ItemsControl x:Name="BuyItemsListControl"/>
+            <ListBox x:Name="BuyItemsListControl"/>
         </ScrollViewer>
         <Button Content="Nodzēst sarakstu" Click="Button_Click" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top" Width="116" RenderTransformOrigin="0.453,6.989"/>
         <Button Content="Saglabāt vēsturē" HorizontalAlignment="Left" Margin="160,96,0,0" VerticalAlignment="Top" Width="116" Click="Button_Click_1"/>
+        <Button Content="Dzēst ierakstu" HorizontalAlignment="Left" Margin="160,122,0,0" VerticalAlignment="Top" Width="116" Click="Button_Click_2"/>
 
     </Grid>
 </Window>
