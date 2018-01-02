@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:BuyList"
         mc:Ignorable="d"
         Title="Pirkumu saraksta aplikācija" Height="350" Width="525"
-        Background="Pink">
+        Background="Pink"
+        Closing="Window_Closing"
+        Closed="Window_Closed">
 
     <Grid>
         <TextBox x:Name="BuyListItemName" HorizontalAlignment="Left" Height="81" Margin="10,10,0,0" TextWrapping="Wrap" TextAlignment="Center" Text="" VerticalAlignment="Top" Width="266" GotFocus="BuyListItemName_GotFocus"/>

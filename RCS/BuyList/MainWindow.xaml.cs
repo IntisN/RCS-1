@@ -61,8 +61,6 @@ namespace BuyList
         {
             //Deleting everything from BuyItemsList
             this.BuyItemsList.Clear();
-            //Deleting everything from BuyItemName box
-            //this.BuyItemName.Text = "";
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -82,8 +80,18 @@ namespace BuyList
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             //Deleting lines from BuyItemsList or reject operation
-                string SelectedItem = this.BuyItemsListControl.SelectedItems[0] as string;
-                BuyItemsList.Remove(SelectedItem);
+            string SelectedItem = this.BuyItemsListControl.SelectedItems[0] as string;
+            BuyItemsList.Remove(SelectedItem);
+        }
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            //Write list from BuyItemsList to file when closing app
+            File.WriteAllLines(@".\Saraksts.txt", this.BuyItemsList);
+        }
+        private void Window_Closed(object sender, EventArgs e)
+        {
+            //Write list from BuyItemsList to file when app is closed
+            File.WriteAllLines(@".\Saraksts.txt", this.BuyItemsList);
         }
     }
 }
