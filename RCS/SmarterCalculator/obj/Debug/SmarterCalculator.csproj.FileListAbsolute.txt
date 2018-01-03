@@ -1,7 +1,0 @@
-C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\SmarterCalculator\bin\Debug\SmarterCalculator.exe.config
-C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\SmarterCalculator\bin\Debug\SmarterCalculator.exe
-C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\SmarterCalculator\bin\Debug\SmarterCalculator.pdb
-C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\SmarterCalculator\obj\Debug\SmarterCalculator.csprojResolveAssemblyReference.cache
-C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\SmarterCalculator\obj\Debug\SmarterCalculator.csproj.CoreCompileInputs.cache
-C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\SmarterCalculator\obj\Debug\SmarterCalculator.exe
-C:\Users\IntisN\OneDrive\GitHub\RCS-1\RCS\SmarterCalculator\obj\Debug\SmarterCalculator.pdb
