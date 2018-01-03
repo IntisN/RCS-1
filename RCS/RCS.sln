@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmarterCalculator", "Smarte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuyList", "BuyList\BuyList.csproj", "{CFEF995C-A1AD-41C4-BAF6-747C898ACF56}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatDatingSite", "CatDatingSite\CatDatingSite.csproj", "{32081CBA-8539-474C-97C4-F05985D24E11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{CFEF995C-A1AD-41C4-BAF6-747C898ACF56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFEF995C-A1AD-41C4-BAF6-747C898ACF56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFEF995C-A1AD-41C4-BAF6-747C898ACF56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32081CBA-8539-474C-97C4-F05985D24E11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32081CBA-8539-474C-97C4-F05985D24E11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32081CBA-8539-474C-97C4-F05985D24E11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32081CBA-8539-474C-97C4-F05985D24E11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
