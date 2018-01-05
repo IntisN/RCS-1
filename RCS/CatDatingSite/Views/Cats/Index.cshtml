@@ -1,0 +1,39 @@
+﻿<!-- lai rakstītu komentarus ir jāievada <!--
+    mums no sākuma bija tikai CatDatingSite.Models.CatProfile, taču, tad ņem tikai vienu profilu
+    lai viņš ņemtu vairākus un no saraksta, jāpievieno List priekšā un iepriekšējā info jāieliek <>  -->
+
+@model  List<CatDatingSite.Models.CatProfile>
+    @{
+        ViewBag.Title = "Home Page";
+    }
+
+
+<div class="row">
+
+    @Html.ActionLink("pievienot jaunu kaķi", "AddCats", "Cats")
+
+
+    <!-- nosākuma, kad nebija Lists,mēs likām meklēt name, age utt atModel.CatName
+        Bet tā kā mums ir lists, sistēma met error pie atModel.CatName, CatAge utt...izmantojam foreach funkciju
+        pirms katra c# koda, liekam "at" un mum sir jāizveido jauns mainīgais, ko nosaucam "cat", kurš atrodas šajā Model
+        un sistēmai liekam meklet nevis model, bet atcat.CatName utt-->
+    @foreach (var cat in Model)
+
+    {
+       
+    <div class="col-md-12">
+        @Html.ActionLink("Nodzēst kaķi", "DeleteCats", "Cats", new { deletableCatId = cat.CatID }, null)
+        <h2>Cat Name: @cat.CatName</h2>
+        <p> Cat age is: @cat.CatAge</p>
+        <img src="@cat.CatImage" />
+        <p>
+            @cat.CatDescription
+        </p>
+        @Html.ActionLink("rediģēt kaķi", "EditCats", "Cats", new { deditableCatId = cat.CatID }, null)
+        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    }
+
+
+
+</div>

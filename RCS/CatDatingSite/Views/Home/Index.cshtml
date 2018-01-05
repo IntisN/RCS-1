@@ -1,0 +1,28 @@
+﻿<!-- lai rakstītu komentarus ir jāievada <!--
+    mums no sākuma bija tikai CatDatingSite.Models.CatProfile, taču, tad ņem tikai vienu profilu
+    lai viņš ņemtu vairākus un no saraksta, jāpievieno List priekšā un iepriekšējā info jāieliek <>  -->
+
+@model  List<CatDatingSite.Models.CatProfile>
+    @{
+        ViewBag.Title = "Home Page";
+    }
+
+
+<div class="row">
+
+    <!-- nosākuma, kad nebija Lists,mēs likām meklēt name, age utt atModel.CatName
+        Bet tā kā mums ir lists, sistēma met error pie atModel.CatName, CatAge utt...izmantojam foreach funkciju
+        pirms katra c# koda, liekam "at" un mum sir jāizveido jauns mainīgais, ko nosaucam "cat", kurš atrodas šajā Model
+        un sistēmai liekam meklet nevis model, bet atcat.CatName utt-->
+
+    <!-- Tad, kad izveidojām atsevišķu CatsController kontrolieri, nokopējām šo Index.cshtml un iekopējām viņu zem 
+        CatsCotroller. Un tad no šī izdzēsām visu, kas saistīts ar kaķiem,atstājot tikai Home textu-->
+  
+        <div class="col-md-4">
+         
+            <p>
+               WELCOME in First Cat Dating site!
+            </p>
+           </div>
+    
+</div>

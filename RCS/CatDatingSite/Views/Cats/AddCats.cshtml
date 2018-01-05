@@ -1,0 +1,44 @@
+﻿
+@model  CatDatingSite.Models.CatProfile
+
+@{
+    ViewBag.Title = "AddCats";
+}
+
+<h2>AddCats</h2>
+
+@using (Html.BeginForm("AddCats", "Cats", FormMethod.Post))
+{
+    <div class="row">
+        <div class="col-md-2">Cat Name:</div>
+        <!-- EditorFor uzģenerē lauciņu-->
+        <div class="col-md-2">
+            <p>@Html.EditorFor(Model => Model.CatName)</p>
+        </div>
+        <p></p>
+
+    </div>
+    <div class="row">
+        <div class="col-md-2">Cat Age:</div>
+        <div class="col-md-2"><p>@Html.EditorFor(Model => Model.CatAge)</p></div>
+        <p> </p>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-2">Cat Image:</div>
+        <div class="col-md-2"><p>@Html.EditorFor(Model => Model.CatImage)</p></div>
+        <p></p>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-2">Cat Description:</div>
+        <div class="col-md-2"><p>@Html.EditorFor(Model => Model.CatDescription)</p></div>
+        <p>@Html.ValidationMessageFor(Model =>Model.CatDescription)</p>
+
+    </div>
+
+    <input type="submit" value="Izveidot kaķa profilu" />
+}
+
