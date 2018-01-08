@@ -13,7 +13,7 @@ namespace CatDatingSite.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201801031802200_InitialCreate"; }
+            get { return "201801031754308_InitialCreate"; }
         }
         
         string IMigrationMetadata.Source

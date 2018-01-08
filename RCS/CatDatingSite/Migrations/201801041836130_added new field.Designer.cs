@@ -7,13 +7,13 @@ namespace CatDatingSite.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class catNameisrequiredBecausewewantedto : IMigrationMetadata
+    public sealed partial class addednewfield : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(catNameisrequiredBecausewewantedto));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(addednewfield));
         
         string IMigrationMetadata.Id
         {
-            get { return "201801041831274_catName is required. Because we wanted to."; }
+            get { return "201801041836130_added new field"; }
         }
         
         string IMigrationMetadata.Source

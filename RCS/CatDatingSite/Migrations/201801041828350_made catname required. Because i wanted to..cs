@@ -3,7 +3,7 @@ namespace CatDatingSite.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class catNameisrequiredBecausewewantedto : DbMigration
+    public partial class madecatnamerequiredBecauseiwantedto : DbMigration
     {
         public override void Up()
         {

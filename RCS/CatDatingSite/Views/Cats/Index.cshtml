@@ -1,39 +1,34 @@
-﻿<!-- lai rakstītu komentarus ir jāievada <!--
-    mums no sākuma bija tikai CatDatingSite.Models.CatProfile, taču, tad ņem tikai vienu profilu
-    lai viņš ņemtu vairākus un no saraksta, jāpievieno List priekšā un iepriekšējā info jāieliek <>  -->
+﻿@model List<CatDatingSite.Models.CatProfile>
 
-@model  List<CatDatingSite.Models.CatProfile>
-    @{
-        ViewBag.Title = "Home Page";
-    }
-
-
-<div class="row">
-
-    @Html.ActionLink("pievienot jaunu kaķi", "AddCats", "Cats")
-
-
-    <!-- nosākuma, kad nebija Lists,mēs likām meklēt name, age utt atModel.CatName
-        Bet tā kā mums ir lists, sistēma met error pie atModel.CatName, CatAge utt...izmantojam foreach funkciju
-        pirms katra c# koda, liekam "at" un mum sir jāizveido jauns mainīgais, ko nosaucam "cat", kurš atrodas šajā Model
-        un sistēmai liekam meklet nevis model, bet atcat.CatName utt-->
-    @foreach (var cat in Model)
-
-    {
-       
-    <div class="col-md-12">
-        @Html.ActionLink("Nodzēst kaķi", "DeleteCats", "Cats", new { deletableCatId = cat.CatID }, null)
-        <h2>Cat Name: @cat.CatName</h2>
-        <p> Cat age is: @cat.CatAge</p>
-        <img src="@cat.CatImage" />
-        <p>
-            @cat.CatDescription
-        </p>
-        @Html.ActionLink("rediģēt kaķi", "EditCats", "Cats", new { deditableCatId = cat.CatID }, null)
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+<div class="container">
+    <div class="row">
+        @Html.ActionLink("pievienot jaunu kaķi", "AddCat", "Cats", htmlAttributes: new { @class = "btn btn-info", role = "button" })
     </div>
-    }
-
-
-
 </div>
+
+
+<!-- kad vēlamies izsaukt C# kodu, lietojam at simbolu -->
+@foreach (var cat in Model)
+{
+    
+        <div class="row">
+        <div class="col-md-12">
+            
+            <h2>Cat name: @cat.CatName</h2>
+            <p> Cat age is @cat.CatAge</p>
+            <!-- CatsController -> GetCatProfilePicture (catProfilePictureId)
+            /Cats/GetCatProfilePicture?catProfilePictureId=5 -->
+            @if (cat.ProfilePicture != null)
+            {
+                <img src="~/Cats/GetCatProfilePicture?catProfilePictureId=@cat.ProfilePicture.CatProfileId" class="img-responsive" />
+            }
+            <p>
+                @cat.CatDescription
+            </p>
+            <p>
+                @Html.ActionLink("Rediģēt kaķi", "EditCat", "Cats", new { editableCatId = cat.CatId }, htmlAttributes: new { @class = "btn btn-info", role = "button" })
+                @Html.ActionLink("Nodzēst kaķi", "DeleteCats", "Cats", new { deletableCatId = cat.CatId }, htmlAttributes: new { @class = "btn btn-info", role = "button" })
+            </p>
+        </div>
+    </div>
+}

@@ -11,12 +11,12 @@ namespace CatDatingSite.Migrations
                 "dbo.CatProfiles",
                 c => new
                     {
-                        CatID = c.Int(nullable: false, identity: true),
+                        CatId = c.Int(nullable: false, identity: true),
                         CatName = c.String(),
                         CatAge = c.Int(nullable: false),
                         CatImage = c.String(),
                     })
-                .PrimaryKey(t => t.CatID);
+                .PrimaryKey(t => t.CatId);
             
         }
         

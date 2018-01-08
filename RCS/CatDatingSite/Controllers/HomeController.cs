@@ -6,22 +6,19 @@ using System.Web.Mvc;
 
 namespace CatDatingSite.Controllers
 {
-    using CatDatingSite.Models;
     using System.Net;
+
 
     public class HomeController : Controller
     {
         public ActionResult Index()
         {
             return View();
-            
         }
-
-       
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.Diana";
+            ViewBag.Message = "Your application description page. REINI!!S";
 
             return View();
         }

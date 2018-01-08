@@ -7,7 +7,7 @@ namespace CatDatingSite.Migrations
     {
         public override void Up()
         {
-            AddColumn("dbo.CatProfiles", "CatDescription", c => c.String());
+            AddColumn("dbo.CatProfiles", "CatDescription", c => c.String(nullable: false));
         }
         
         public override void Down()
