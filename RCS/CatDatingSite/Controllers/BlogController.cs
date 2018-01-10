@@ -19,7 +19,7 @@ namespace CatDatingSite.Controllers
 
             using (var blogDb = new BlogDb())
             {
-               
+
                 //iegūt blogu sarakstu no blogu datu bāzes tabulas
                 var blogListFromDb = blogDb.BlogProfiles.ToList();
 
@@ -29,12 +29,28 @@ namespace CatDatingSite.Controllers
             }
 
         }
-            public ActionResult AddBlog()
+        public ActionResult AddBlog()
+        {
+            return View();
+        }
+
+        public ActionResult DeleteBlog(int deletableBlogId)
+        {
+            using (var BlogDb = new BlogDb())
             {
-                return View();
+                //atrast blogu ar konkreto Id numuru
+                var removableBlog = BlogDb.BlogProfiles.First(BlogProfiles => BlogProfiles.BlogID == deletableBlogId);
+
+                //izdzēst šo blogu no tabulas
+                BlogDb.BlogProfiles.Remove(removableBlog);
+
+                //saglabat veiktās izmaiņas datu bāzē
+                BlogDb.SaveChanges();
+
+                return RedirectToAction("Index");
             }
 
-
+        }
 
         //mums ir jānorada, ka šī funkcija veic POST darbību
         //ja nenorādam, viņš saprot, ka funkcija, kas jāveic ir Get nevis POST
@@ -54,5 +70,36 @@ namespace CatDatingSite.Controllers
             }
         }
 
+        [HttpPost]
+        //
+        public ActionResult EditBlog(Blog blogs)
+        {
+            if (ModelState.IsValid == false)
+            {
+                return View(blogs);
+            }
+            using (var BlogDb = new BlogDb())
+            {
+                BlogDb.Entry(blogs).State = EntityState.Modified;
+                BlogDb.SaveChanges();
+            }
+            
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult EditBlog(int editableBlogId)
+        {
+
+            using (var BlogDb = new BlogDb())
+            {
+                var editableBlog = BlogDb.BlogProfiles.First(Blog => Blog.BlogID == editableBlogId);
+
+                BlogDb.SaveChanges();
+
+                return View("EditBlog", editableBlog);
+            }
+
+
+        }
     }
 }

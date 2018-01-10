@@ -259,3 +259,5 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/Java/lv.rigacoding.day1/nbproject/private/
+/Java/lv.rigacoding.day1/build/

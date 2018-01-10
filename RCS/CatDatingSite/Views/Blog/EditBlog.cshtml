@@ -1,7 +1,44 @@
-﻿
+﻿@model  CatDatingSite.Models.Blog
 @{
-    ViewBag.Title = "EditBlog";
+    /**/
+
+    ViewBag.Title = "Rediģēt blogu";
 }
 
-<h2>EditBlog</h2>
+<h2>AddBlog</h2>
 
+@using (Html.BeginForm("EditBlog", "Blog", FormMethod.Post))
+{
+    <div class="row">
+        <div class="col-md-2"><b>Nosaukums:</b></div>
+        <!-- EditorFor uzģenerē lauciņu-->
+        <div class="col-md-2">
+            <p>
+                @Html.EditorFor(Model => Model.BlogName)
+            </p>
+        </div>
+        <p></p>
+
+    </div>
+    <div class="row">
+        <div class="col-md-2"><b>Autors:</b></div>
+        <div class="col-md-2"><p>@Html.EditorFor(Model => Model.BlogAuthor)</p></div>
+        <p> </p>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-2"><b>Bloga attēls:</b></div>
+        <div class="col-md-2"><p>@Html.EditorFor(Model => Model.BlogImage)</p></div>
+        <p></p>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-2"><b>Raksts:</b></div>
+        <div class="col-md-2"><p>@Html.EditorFor(Model => Model.BlogDescription)</p></div>
+        <p>@Html.ValidationMessageFor(Model => Model.BlogDescription)</p>
+
+    </div>
+    <input type="submit" value="Saglabāt" />
+}

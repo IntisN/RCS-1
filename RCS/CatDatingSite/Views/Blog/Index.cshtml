@@ -21,14 +21,15 @@
     {
         <hr />
         <div class="col-md-12">
-            @Html.ActionLink("Nodzēst Blogu", "DeleteBlog", "Blog", new { deletableBlogtId = blogs.BlogID }, null)
+
             <h2>Nosaukums: @blogs.BlogName</h2>
             <p>Autors: @blogs.BlogAuthor</p>
-            <img src="@blogs.BlogImage" />
+            <img src="@blogs.BlogImage" width="400" />
             <p>
                 @blogs.BlogDescription
             </p>
-            @Html.ActionLink("Rediģēt Blogu", "EditBlog", "Blog", new { editableBlogId = blogs.BlogID }, null)
+            <p class="btn btn-default">@Html.ActionLink("Rediģēt Blogu", "EditBlog", "Blog", new { editableBlogId = blogs.BlogID }, null)</p>
+            <p class="btn btn-default">@Html.ActionLink("Nodzēst Blogu", "DeleteBlog", "Blog", new { deletableBlogId = blogs.BlogID }, null)</p>
 
         </div>
     }
